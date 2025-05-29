@@ -1,4 +1,5 @@
 {
+  "homepage": "https://WilliamChn.github.io",
   "name": "williamchn-github-io",
   "version": "0.1.0",
   "private": true,
@@ -38,7 +39,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://WilliamChn.github.io",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
