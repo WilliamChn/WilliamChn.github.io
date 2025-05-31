@@ -9,7 +9,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Container setup */
@@ -154,26 +154,117 @@ html, body {
 /* Text overlay */
 .bio {
   position: relative;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 8%;
+  padding-right: 8%;
   z-index: 1;
-  text-align: center;
+  text-align: left;
+  transform: translate(400px,-50px);
+  font-family: 'Inter', sans-serif;
 }
+
 
 .bio h1 {
   color: white;
-  text-align: center;
   font-size: 3rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.2s;
+  margin-bottom: 1rem;
+}
+
+.bio p {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.bio p1 {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 800px;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.5s;
+  margin-top: 2rem;
+}
+
+.bio p + p {
+  margin-top: 1.5rem;
+}
+
+.see-more-wrapper {
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.5s;
+  margin-top: 2rem;
+}
+
+.see-more {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.see-more:hover {
+  opacity: 0.8;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 0.5rem;
+  animation: bounceArrow 1.2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceArrow {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+  100% { transform: translateX(0); }
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .bio {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transform: translateY(-50px);
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .bio h1 {
     font-size: 2rem;
-    padding: 0 1rem;
+  }
+
+  .bio p {
+    font-size: 1rem;
   }
 
   .nav-name {
