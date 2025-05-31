@@ -315,13 +315,13 @@ html, body {
 /* Responsive styles */
 @media (max-width: 768px) {
   html, body {
-    overflow: hidden;
+
     height: 100%;
   }
 
   .App {
     height: 100vh;
-    overflow: hidden;
+
   }
 
   .bio {
