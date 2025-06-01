@@ -31,6 +31,16 @@ html, body {
   z-index: 0;
 }
 
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 0; 
+}
+
 .desktop-nav {
   display: flex;
 }
@@ -389,10 +399,12 @@ html, body {
 @media (max-width: 768px) {
   html, body {
     height: 100%;
+    overflow: hidden;
   }
 
   .App {
     height: 100vh;
+    overflow: hidden;
   }
 
   .bio {

@@ -38,6 +38,7 @@ useEffect(() => {
     <Router>
       <div className="App">
         <img src={background} alt="background" className="bg-img" />
+        <div className="background-overlay" />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
