@@ -9,28 +9,31 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   font-family: 'Inter', sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+  background-attachment: scroll;
+  overscroll-behavior: contain;
 }
 
 /* Container setup */
 .App {
   position: relative;
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-}
-
-/* Background image */
-.bg-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: black;
+  background-image: url('./assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
   z-index: 0;
 }
 
+/* Keep all other existing CSS styles unchanged below */
 .background-overlay {
   position: absolute;
   top: 0;
@@ -173,6 +176,11 @@ html, body {
   z-index: 1;
   text-align: left;
   font-family: 'Inter', sans-serif;
+}
+
+.bio.about {
+  padding-top: 100px; /* or adjust to your navbar height */
+  padding-bottom: 2rem;
 }
 
 .bio > * {
@@ -398,19 +406,30 @@ html, body {
 /* Responsive styles */
 @media (max-width: 768px) {
   html, body {
-    height: 100%;
-    overflow: hidden;
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .App {
-    height: 100vh;
-    overflow: hidden;
-  }
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible; /* or auto if you want it scrollable */
+}
 
   .bio {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     transform: translateY(-50px);
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .bio.about {
+    padding: 100px 1.5rem 6rem; 
+    transform: none;
     align-items: flex-start;
     text-align: left;
   }
