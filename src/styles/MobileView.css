@@ -1,0 +1,167 @@
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+    html, body {
+    height: auto;
+    min-height: 100%;
+  }
+
+  .App {
+    min-height: 100%;
+  }
+
+  .bio {
+    padding-top: 1rem; /* Adjust as needed to prevent overlap with navbar */
+  }
+   .bio h1 {
+    font-size: 2rem;
+  }
+
+  .bio p {
+    font-size: 1rem;
+  }
+
+  .nav-name {
+    font-size: 1rem;
+  }
+
+  .nav-right.mobile-menu {
+    display: flex;
+  }
+
+  .nav-left {
+    margin-left: 0rem;
+  }
+
+  .nav-headshot {
+    margin-right: 0.5rem;
+    height: 40px;
+    width: 40px;
+  }
+
+  .social-icons-desktop {
+    display: none;
+  }
+
+  .social-icons-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 5rem;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .social-icon {
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  html, body {
+    min-height: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+.App {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible; /* or auto if you want it scrollable */
+}
+
+  .bio {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transform: translateY(-50px);
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .bio.about {
+    padding: 100px 1.5rem 6rem; 
+    transform: none;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .bio h1 {
+    font-size: 2rem;
+  }
+
+  .bio p {
+    font-size: 1rem;
+  }
+
+  .nav-name {
+    font-size: 1rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-right.mobile-menu {
+    display: flex;
+  }
+
+  .nav-left {
+    margin-left: 0rem;
+  }
+
+  .nav-headshot {
+    margin-right: 0.5rem;
+    height: 40px;
+    width: 40px;
+  }
+
+  .social-icons-desktop {
+    display: none;
+  }
+
+  .social-icons-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 5rem;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .social-icon {
+    width: 26px;
+    height: 26px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}

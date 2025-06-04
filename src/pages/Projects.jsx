@@ -1,3 +1,5 @@
+import "../styles/App.css"
+
 function Projects() {
   return (
     <div className="page-content">

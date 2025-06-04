@@ -9,7 +9,7 @@ import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 
-import './App.css';
+import "./styles/App.css"
 
 function App() {
   return (

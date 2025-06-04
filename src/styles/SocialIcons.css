@@ -1,0 +1,35 @@
+.social-icons-desktop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.social-icons-wrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}

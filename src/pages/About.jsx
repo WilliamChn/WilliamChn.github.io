@@ -1,4 +1,6 @@
 import { SocialIconsDesktop, SocialIconsMobile } from "../components/SocialIcons";
+import "../styles/App.css"
+import "../styles/Home.css"
 
 function About() {
   return (
