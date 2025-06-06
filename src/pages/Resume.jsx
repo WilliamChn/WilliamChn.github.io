@@ -30,9 +30,11 @@ const Resume = () => {
         className="resume-image"
       />
 
-      <SocialIconsDesktop />
+      <div className="social-icons-wrapper resume">
+        <SocialIconsDesktop />
+        <SocialIconsMobile />
+      </div>
     </div>
-    <SocialIconsMobile/>
     </>
   );
 };

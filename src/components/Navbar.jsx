@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import headshot from '../assets/headshot.png';
+import "../styles/Navbar.css"
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

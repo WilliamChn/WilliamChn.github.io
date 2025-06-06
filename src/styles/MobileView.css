@@ -79,11 +79,11 @@
     -webkit-overflow-scrolling: touch;
   }
 
-.App {
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: visible; /* or auto if you want it scrollable */
-}
+  .App {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible; /* or auto if you want it scrollable */
+  }
 
   .bio {
     padding-left: 1.5rem;

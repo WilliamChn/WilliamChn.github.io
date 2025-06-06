@@ -1,4 +1,5 @@
-// SocialIcons.jsx
+import "../styles/SocialIcons.css"
+import "../styles/MobileView.css"
 import linkedinIcon from '../assets/linkedin.png';
 import githubIcon from '../assets/github.png';
 
