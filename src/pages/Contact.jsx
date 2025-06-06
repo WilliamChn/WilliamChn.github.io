@@ -42,11 +42,11 @@ function Contact() {
   };
 
   return (
-    <div className="page-content">
+    <div className="bio">
       <h1>Contact.</h1>
       <p>
         Get in touch or shoot me an email directly at{" "}
-        <strong>hellocodewonders@gmail.com</strong>
+        <strong>wwilliamchenn@gmail.com</strong>
       </p>
 
       <form onSubmit={handleSubmit}>

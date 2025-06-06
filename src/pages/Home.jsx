@@ -4,7 +4,6 @@ import "../styles/Navbar.css"
 import "../styles/MobileView.css"
 import "../styles/SocialIcons.css"
 
-
 function Home() {
   return (
     <>
