@@ -1,0 +1,47 @@
+.projects-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1000px;
+  background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark gray */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white; /* Ensures text stays visible on the darker background */
+}
+
+.project-image {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 4px;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-content h2 {
+  margin-top: 0;
+}
+
+.case-study-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #7f56d9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.case-study-button:hover {
+  background-color: #6c47c2;
+}
